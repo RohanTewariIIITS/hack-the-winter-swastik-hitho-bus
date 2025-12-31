@@ -99,7 +99,7 @@ fun DestinationSearchResult(
                 TopAppBar(
                     title = {
                         Text(
-                            text = "YourBus",
+                            text = "HithoBus",
                             color = MaterialTheme.colorScheme.onPrimary,
                             fontWeight = FontWeight.Medium
                         )

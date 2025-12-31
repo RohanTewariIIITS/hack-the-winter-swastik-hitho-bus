@@ -75,7 +75,7 @@ fun HomeScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = "YourBus",
+                        text = "HithoBus",
                         color = MaterialTheme.colorScheme.onPrimary,
                         fontWeight = FontWeight.Medium
                     )
@@ -256,6 +256,10 @@ fun HomeScreen(
                     )
                 }
             }
+
+            Spacer(Modifier.padding(top = 16.dp))
+
+            Text("Disclaimer: Only Haldwani to Delhi/Anand Vihar route is supported currently for prototyping purpose of hackathon.", fontSize = 16.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp))
         }
     }
 

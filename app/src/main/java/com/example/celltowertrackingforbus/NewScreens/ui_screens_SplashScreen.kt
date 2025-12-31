@@ -53,7 +53,7 @@ fun SplashScreen(
             Spacer(modifier = Modifier. height(24.dp))
 
             Text(
-                text = "YourBus",
+                text = "HithoBus",
                 color = MaterialTheme.colorScheme.onPrimary,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Bold
@@ -62,7 +62,7 @@ fun SplashScreen(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "Reach your destination with Ease",
+                text = "Track Your Bus with Ease",
                 color = MaterialTheme.colorScheme.onPrimary,
                 fontSize = 16.sp
             )
