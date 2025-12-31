@@ -30,7 +30,7 @@ flowchart LR
     MongoDB --> Railway[☁️ Hosted on<br/>Railway]
 
 
-    <img width="1600" height="873" alt="image" src="https://github.com/user-attachments/assets/80812200-e278-468c-b872-cbfca5cf83bf" />
+    ![Image Alt](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/tree/main)
 
     
     style Start fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
