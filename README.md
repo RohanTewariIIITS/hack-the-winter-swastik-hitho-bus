@@ -28,6 +28,10 @@ flowchart LR
     Server --> MongoDB[(💾 MongoDB<br/>Remote Database)]
     
     MongoDB --> Railway[☁️ Hosted on<br/>Railway]
+
+
+    <img width="1600" height="873" alt="image" src="https://github.com/user-attachments/assets/80812200-e278-468c-b872-cbfca5cf83bf" />
+
     
     style Start fill:#4CAF50,stroke:#2E7D32,stroke-width:3px,color:#fff
     style Fetch fill:#2196F3,stroke:#1565C0,stroke-width:2px,color:#fff
