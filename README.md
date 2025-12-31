@@ -9,5 +9,7 @@ THINGS WE WILL WORK ON FOR ROUND 2
 	3. Expand more routes
       - 🏛️Approach government for 🤝support in official route and schedule data and long term integration opportuniuties
 
-
-TECHNICAL APPROACH FLOW DIAGRAMS - [click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)
+PROBLEM STATEMENT - [[click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Problem%20Statement)
+TECHNICAL APPROACH FLOW DIAGRAMS - [[click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)
+CHALLANGES WE FACED - [[click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Challanges%20We%20Faced)
+OUR SOLUTION - [[click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Our%20Solution)
