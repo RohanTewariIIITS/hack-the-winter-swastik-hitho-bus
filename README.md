@@ -15,4 +15,4 @@ TECHNICAL APPROACH FLOW DIAGRAMS - [[click here for link](https://github.com/Roh
 
 CHALLANGES WE FACED - [click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Challanges%20We%20Faced)
 
-OUR SOLUTION - [[click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Techincal%20Approach%20Flowcharts.md)]
+OUR SOLUTION - [click here for link](https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus/blob/main/Our%20Solution)
