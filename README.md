@@ -1,4 +1,3 @@
-`mermaid
 flowchart LR
     Start([🚀 Start: Fetching DC])
     
@@ -39,4 +38,3 @@ flowchart LR
     style Server fill:#F44336,stroke:#C62828,stroke-width:2px,color:#fff
     style MongoDB fill:#607D8B,stroke:#37474F,stroke-width:2px,color:#fff
     style Railway fill:#795548,stroke:#4E342E,stroke-width:2px,color:#fff
-`
