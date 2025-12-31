@@ -3,17 +3,15 @@
 2. Instead of depending solely on GPS (which often fails or doesn’t exist), our system combines:
 
 🔹 Authorized Data Sources
-
     -Government route permits
-
     -Official timetables
 
 🔹 Crowd-Verified Signals (Opt-in & Anonymized)
 
-  Probabilistic bus position estimation
+🔹 Probabilistic bus position estimation
 
-  ETA prediction using historical delays and traffic behavior
+🔹 ETA prediction using historical delays and traffic behavior
 
-  Route deviation detection without fixed schedules
+🔹 Route deviation detection without fixed schedules
 
-  This hybrid approach allows reliable tracking even when live GPS is missing or unreliable.
+🔹 This hybrid approach allows reliable tracking even when live GPS is missing or unreliable.
