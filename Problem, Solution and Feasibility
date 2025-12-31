@@ -1,0 +1,15 @@
+PROBLEM WE ARE TRYING TO SOLVE
+-In India, buses are the backbone of daily mobility for millions — yet the experience remains unpredictable and opaque:
+Daily Ridership & Reliance: In major cities like Delhi, combined bus networks (government + clusters) carry around 4.1 million passengers daily, making them critical for commuters. 
+Hindustan Times
+
+Lack of Real-Time Information: Many buses do not broadcast live location data. For example, Andhra Pradesh’s APSRTC has limited live GPS data on ordinary city and rural buses, leaving passengers “in the lurch.” 
+The Times of India
+
+GPS Tracking Gaps: Even where GPS exists, system integrity is poor — in Chennai, official bus tracking apps have shown wildly inaccurate arrival times (e.g., predicted waits of over 19,000 minutes due to missing GPS on older buses). 
+The Times of India
+
+Infrastructure & Policy Variation: Most systems lack standardized fleet tracking — only a fraction of fleet (like Delhi’s ~1,700 cluster buses) feeds real-time feeds into central systems while thousands of buses still operate without reliable GPS. 
+MEDIANAMA
+
+These gaps create huge uncertainty for commuters — long waits, route guesswork, missed connections, overcrowding, and negative impacts on safety, especially for vulnerable populations like women and the elderly.
