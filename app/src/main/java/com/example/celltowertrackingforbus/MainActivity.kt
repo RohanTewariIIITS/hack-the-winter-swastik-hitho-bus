@@ -17,21 +17,16 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.celltowertrackingforbus.BusTracking.BusServiceController
 import com.example.celltowertrackingforbus.BusTracking.BusTrackingService
-import com.example.celltowertrackingforbus.Screens.OfflineBusTracker
-import com.example.celltowertrackingforbus.Screens.OfflineBusTrackerLoading
 import com.example.celltowertrackingforbus.ui.theme.CellTowerTrackingForBusTheme
 import com.example.celltowertrackingforbus.NewScreens.AppNavigation
-import kotlinx.coroutines.delay
 
 class MainActivity : ComponentActivity() {
 
