@@ -6,8 +6,8 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 data class HomeUiState(
-    val fromLocation: String = "",
-    val toLocation: String = "",
+    val fromLocation: String = "haldwani",
+    val toLocation: String = "delhi",
     val selectedDateMillis: Long = System.currentTimeMillis(),
     val showDatePicker: Boolean = false
 )

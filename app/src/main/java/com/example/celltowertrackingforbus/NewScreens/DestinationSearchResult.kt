@@ -191,7 +191,7 @@ fun DestinationSearchResult(
                 },
                 onOutsideBus = {
                     onOutsideBus(selectedBus!!)
-                    uriHandler.openUri("https://bus-tracker-copy-production.up.railway.app/")
+//                    uriHandler.openUri("https://bus-tracker-copy-production.up.railway.app/")
                     showPopup = false
                     selectedBus = null
                 },

@@ -1,4 +1,4 @@
-package com.example.celltowertrackingforbus.Screens
+package com.example.celltowertrackingforbus.Screens_Legacy
 
 import android.os.Build
 import androidx.annotation.RequiresApi
