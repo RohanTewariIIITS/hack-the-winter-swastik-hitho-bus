@@ -21,12 +21,15 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.celltowertrackingforbus.BusTracking.BusServiceController
 import com.example.celltowertrackingforbus.BusTracking.BusTrackingService
 import com.example.celltowertrackingforbus.ui.theme.CellTowerTrackingForBusTheme
 import com.example.celltowertrackingforbus.NewScreens.AppNavigation
+import com.example.celltowertrackingforbus.features.onlineRemoteTracking.OnlineTrackingViewModel
+import com.example.celltowertrackingforbus.features.onlineRemoteTracking.screens.OnlineTrackingScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -146,6 +149,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val navController: NavHostController = rememberNavController()
+
+            val onlineTrackingViewModel: OnlineTrackingViewModel = viewModel()
+
             CellTowerTrackingForBusTheme {
                 Scaffold(modifier = Modifier.fillMaxSize())  { innerPadding ->
 //                  HomeScreen(innerPadding, db, uploadingViewModel)
@@ -173,7 +179,8 @@ class MainActivity : ComponentActivity() {
                              busLocationFlow = busTrackingService?.busLocation,
                              onStartTracking = {
                                  BusServiceController.startTracking(this@MainActivity)
-                             }
+                             },
+                                onlineTrackingViewModel = onlineTrackingViewModel
                          )
                     }
                 }

@@ -1,13 +1,17 @@
 package com.example.celltowertrackingforbus.NewScreens
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ModalDrawerSheet
 import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
@@ -15,6 +19,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.celltowertrackingforbus.BusTracking.BusLocation
+import com.example.celltowertrackingforbus.features.inBusTracking.OfflineBusTracker
+import com.example.celltowertrackingforbus.features.onlineRemoteTracking.OnlineTrackingViewModel
+import com.example.celltowertrackingforbus.features.onlineRemoteTracking.screens.OnlineTrackingScreen
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
@@ -32,7 +39,8 @@ sealed class Routes(val route: String) {
 fun AppNavigation(
     navController: NavHostController = rememberNavController(),
     busLocationFlow: StateFlow<BusLocation>? = null,
-    onStartTracking: () -> Unit = {}
+    onStartTracking: () -> Unit = {},
+    onlineTrackingViewModel: OnlineTrackingViewModel
 ) {
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val scope = rememberCoroutineScope()
@@ -133,7 +141,7 @@ fun AppNavigation(
                         navController.navigate(Routes.OfflineTracking.route)
                     },
                     onOutsideBus = {
-
+                        navController.navigate(Routes.OnlineTracking.route)
                     },
                     viewModel = destinationANdHomeViewModel
                 )
@@ -156,14 +164,25 @@ fun AppNavigation(
             composable(Routes.OfflineTracking.route) {
                 if (busLocationFlow != null) {
                     OfflineBusTracker(
-                        busLocationFlow = busLocationFlow
+                        busLocationFlow = busLocationFlow,
+                        viewModel = onlineTrackingViewModel
                     )
                 } else {
                     // Show loading or error state when service is not bound yet
                     Box(modifier = Modifier.fillMaxSize()) {
-                        // Loading state - you can add a proper loading UI here
+                        Column(
+                            modifier = Modifier.fillMaxSize(),
+                            verticalArrangement = Arrangement.Center,
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            CircularProgressIndicator()
+                        }
                     }
                 }
+            }
+
+            composable(Routes.OnlineTracking.route) {
+                OnlineTrackingScreen(onlineTrackingViewModel)
             }
         }
     }
