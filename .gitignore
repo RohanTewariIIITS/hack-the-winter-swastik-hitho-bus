@@ -1,16 +1,23 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+# Ignore Android Studio / IntelliJ
+**/.idea/
+**/*.iml
+
+# Gradle
+**/.gradle/
+**/build/
+
+# Android local config
+**/local.properties
+
+# Native builds
+**/.cxx/
+**/.externalNativeBuild/
+
+# Device / OS
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
-.qodo
+
+# Android Studio Device Streaming
+**/deviceStreaming/
+**/.idea/deviceStreaming/
+**/.idea/deploymentTargetSelector.xml
+**/.idea/workspace.xml
