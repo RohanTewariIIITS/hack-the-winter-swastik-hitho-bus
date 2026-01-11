@@ -4,6 +4,8 @@
 **HithoBus** is a centralized, user-friendly bus tracking platform that integrates all major Indian government road
 transport services such as:
 
+UTC (Uttarakhand Transport Corportation)
+
 UPSRTC (Uttar Pradesh State Road Transport Corporation)
 
 PBSRTC (Punjab State Road Transport Corporation)
@@ -64,8 +66,7 @@ There are some challenges that we face & notice -
 <p align=center><img src="https://i.postimg.cc/NF0JGB9G/Screenshot-2026-01-11-223404.png
 " alt="demoImage"></p>
 
-<p align=center><img src="https://i.postimg.cc/hhWdy0qZ/Screenshot-2026-01-11-223325.png
-" alt="demoImage" width=200></p>
+<p align=center><img src="https://i.postimg.cc/hhWdy0qZ/Screenshot-2026-01-11-223325.png" alt="demoImage" width=200></p>
 
 
 Click here to download the APK - [download](https://drive.google.com/file/d/11J7U6uBo3CVTBF8ThX2rB4mm1T9HtNis/view)
