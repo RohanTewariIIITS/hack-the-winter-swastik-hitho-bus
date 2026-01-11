@@ -63,8 +63,7 @@ There are some challenges that we face & notice -
 
 ## Demo 
 
-<p align=center><img src="https://i.postimg.cc/NF0JGB9G/Screenshot-2026-01-11-223404.png
-" alt="demoImage"></p>
+<p align=center><img src="https://i.postimg.cc/NF0JGB9G/Screenshot-2026-01-11-223404.png" alt="demoImage"></p>
 
 <p align=center><img src="https://i.postimg.cc/hhWdy0qZ/Screenshot-2026-01-11-223325.png" alt="demoImage" width=200></p>
 
