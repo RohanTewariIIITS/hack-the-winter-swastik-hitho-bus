@@ -4,8 +4,6 @@
 **HithoBus** is a centralized, user-friendly bus tracking platform that integrates all major Indian government road
 transport services such as:
 
-UTC (Uttarakhand Transport Corportation)
-
 UPSRTC (Uttar Pradesh State Road Transport Corporation)
 
 PBSRTC (Punjab State Road Transport Corporation)
@@ -249,3 +247,18 @@ Inside Bus - *Can choose between cell tracking or GPS crowdsourcing*
 
 -  Post location data to server
 
+## Core APIs,Libraries & System Components 
+
+| <div align="center">API / Library / Component</div> | <div align="center">Category</div> | <div align="center">Purpose & Usage in the System</div> |
+|--------------------------|----------|--------------------------------|
+| **Fused Location Provider** | Location Services | Provides an abstraction over GPS and other location sources to fetch the user’s current location as a Location object, primarily used when GPS-based tracking is enabled. |
+| **Telephony Manager** | Telephony Services | Retrieves information about the currently connected cell tower, enabling non-GPS, cell-tower-based location inference for bus tracking. |
+| **PhoneStateListener** | Telephony Services (Legacy Support) | Listens to cell tower and signal state changes on devices running Android versions below Android S (API < 31), ensuring backward compatibility. |
+| **Notification Manager** | System Services | Manages persistent and status notifications to inform users that bus tracking is active, required for foreground service compliance. |
+| **Retrofit** | Networking | Acts as the HTTP client for making REST API calls to the backend for sending crowd-sourced location data and fetching processed bus state information. |
+| **Gson** | Serialization / Parsing | Handles JSON serialization and deserialization between Kotlin data models and backend API request/response payloads. |
+| **Google Maps SDK** | Mapping & Visualization | Uses LatLng objects to represent geographic coordinates for rendering bus routes, stops, and estimated bus positions on the map. |
+| **Room Database** | Local Persistence | Stores cell tower metadata and route-specific mappings locally to reduce network calls and improve scalability and offline reliability. |
+| **Hilt / Dagger** | Dependency Injection | Manages lifecycle-aware dependency injection for ViewModels, repositories, services, and network layers, improving modularity and testability. |
+| **Jetpack Compose** | UI Framework | Implements a declarative UI for search, tracking status, map interactions, and user controls with state-driven rendering. |
+| **Kotlin Coroutines / Flow** | Concurrency & Async Streams | Handles asynchronous operations such as network calls, location updates, and database queries using structured concurrency and reactive data streams. |
